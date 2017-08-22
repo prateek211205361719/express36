@@ -12,15 +12,15 @@ app.get('/', function(req, res){
         'NiUo_W8rZH3Wa4Ikkr3Ir8by',
         '/oauthcallback',
     );
-    var scopes = [
+    /*var scopes = [
         'https://www.googleapis.com/auth/plus.me',
         'https://www.googleapis.com/auth/calendar'
     ];
     var url = oauth2Client.generateAuthUrl({
         access_type: 'offline',
         scope: scopes,
-    });
-    res.send(url);
+    });*/
+    res.send(oauth2Client);
 });
 
 app.get('/oauthcallback', function(req, res){
