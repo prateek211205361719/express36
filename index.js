@@ -23,7 +23,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/oauthcallback', function(req, res){
-     req.send(req);
+     res.send(req);
 })
 
 app.listen(port, function(){
