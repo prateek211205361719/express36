@@ -16,7 +16,7 @@ app.get('/', function(req, res){
         access_type: 'offline',
         scope: scopes,
     });
-    res.send(OAuth2);
+    res.send(url);
 });
 
 app.get('/oauthcallback', function(req, res){
