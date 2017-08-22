@@ -5,6 +5,7 @@ var app = express();
 var port = process.env.PORT || 3000;
 
 app.get('/', function(req, res){
+    console.log('----------');
     var OAuth2 = google.auth.OAuth2;
     var oauth2Client = new OAuth2(
         '550794702620-djqehth8agn6n73kiqdonclmivf5tpe4.apps.googleusercontent.com',
